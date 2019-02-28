@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DỊCH VU THUÊ XE 2</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="ten-he-thong">DỊCH VỤ THUÊ XE KHÁCH SẠN</div>
+		<div class="search">
+			<div style="margin-bottom: 20px;">NHẬP SỐ CMT HOẶC SỐ PHÒNG</div>
+			<center>
+				<input id="input" type="text" placeholder="Nhập" name="tim-kiem"> <br>
+				<div class="btn">
+					<button id="btn-search"><i class="fas fa-search"></i> TÌM</button>
+					<button id="btn-delete"><i class="fas fa-times-circle"></i> XÓA</button>
+				</div>
+				<div id="thong-bao">* Không tìm thấy khách hàng</div>
+			</center>
+		</div>
+		<div class="info-khach">
+			<table>
+				<tr>
+					<td class="trai">họ và tên: </td>
+					<td class="phai" id="hovaten"></td>
+				</tr>
+				<tr>
+					<td class="trai">số CMT: </td>
+					<td class="phai" id="socmt"></td>
+				</tr>
+				<tr>
+					<td class="trai">số phòng: </td>
+					<td class="phai" id="sophong"></td>
+				</tr>
+					<td class="trai">ngày đến: </td>
+					<td class="phai" id="ngayden"></td>
+				</tr>
+					<td class="trai">ngày đi: </td>
+					<td class="phai" id="ngaydi"></td>
+				</tr>
+					<td class="trai">điện thoại: </td>
+					<td class="phai" id="dienthoai"></td>
+				</tr>
+					<td class="trai">email: </td>
+					<td class="phai" id="email"></td>
+				</tr>
+			</table>
+		</div>
+		<br>
+		<hr>
+		<div class="xe">
+			<div class="info-xe">
+				<center>
+					<div style="font-size: 20px; margin-bottom: 20px; font-weight: bold;">THÔNG TIN XE</div>
+					<form>
+						<input type="radio" name="xe-oto">Ô TÔ
+						<input type="radio" name="xe-oto">XE MÁY
+						<input type="radio" name="xe-oto">XE ĐẠP
+						<br>
+					</form>
+					<table>
+						<tr>
+							<td id="cot11">Mã xe</td>
+							<td id="cot12">Tên xe</td>
+							<td id="cot13">Năm sản xuất</td>
+							<td id="cot14">Hãng</td>
+							<td id="cot15">Hình ảnh</td>
+							<td id="cot16">Giá/1h</td>
+							<td id="cot17">Chọn xe</td>
+						</tr>
+						<tr>
+							<td id="cot11"></td>
+							<td id="cot12"> </td>
+							<td id="cot13"> </td>
+							<td id="cot14"> </td>
+							<td id="cot15"> </td>
+							<td id="cot16"> </td>
+							<td id="cot17"> </td>
+						</tr>
+					</table>
+
+					<div class="chon-ngay-thue">
+						<span>Ngày thuê: </span>
+						<input type="datetime-local" name="ngay thue">
+						<span>Ngày trả: </span>
+						<input type="datetime-local" name="ngay tra">
+					</div>
+					<button>THUÊ</button>
+				</center>
+			</div>
+			<div class="info-thue">
+				<center>
+					<div style="font-size: 20px; margin-bottom: 20px; font-weight: bold;">DANH SÁCH XE ĐÃ THUÊ</div>
+					<br>
+					<table>
+						<tr>
+							<td id="cot1">Mã xe</td>
+							<td id="cot2">Tên xe</td>
+							<td id="cot3">Năm sản xuất</td>
+							<td id="cot4">Hãng</td>
+							<td id="cot5">Hình ảnh</td>
+							<td id="cot6">Giá/1h</td>
+						</tr>
+						<tr>
+							<td id="cot1"></td>
+							<td id="cot2"> </td>
+							<td id="cot3"> </td>
+							<td id="cot4"> </td>
+							<td id="cot5"> </td>
+							<td id="cot6"> </td>
+						</tr>
+						<tr>
+							<td id="cot1"> </td>
+							<td id="cot2"> </td>
+							<td id="cot3"> </td>
+							<td id="cot4"> </td>
+							<td id="cot5"> </td>
+							<td id="cot6"> </td>
+						</tr>
+					</table>
+				</center>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="./js/info-customer.js"></script>
+</body>
+</html>
